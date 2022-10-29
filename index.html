@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="reg-container">
+    <div class="flex1">
+      <h1 class="header">Join the next <span>Event</span></h1>
+    </div>
+    <div class="flex2">
+      <form action="">
+        <div class="form-group">
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" name="fname" minlength="2" placeholder="John" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label><br>
+          <input type="text" id="lname" name="lname" minlength="2" placeholder="Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label><br>
+          <input type="tel" id="phone" name="phone" pattern="+[1-9]{11}" title="Include country code" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="john@site.com" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label><br>
+          <select name="gender" id="gender" required>
+            <option value="" selected></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of birth</label><br>
+          <input type="date" name="dob" id="dateB" max="01/01/2012" required>
+        </div>
+        <div class="form-group">
+          <label for="colour">Favourite Colour</label><br>
+          <input type="color" name="colour" id="colour" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign me up" class="btn">
+        </div>
+
+        <p>Already have an account? <a href="/login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
